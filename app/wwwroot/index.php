@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ALL);
+//error_reporting(E_ALL);
 //ini_set("memory_limit","100M");
 
 define('L_DEBUG', true);
