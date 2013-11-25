@@ -64,4 +64,15 @@ class WebService extends WebPage
 
 		echo $response;
 	}
+	
+	protected function render_error($msg, $code = 401)
+	{
+		$data = array(
+			'code' => $code,
+			'msg' => $msg,
+			'data' => '',
+		);
+
+		return $this->render($data);
+	}
 }
