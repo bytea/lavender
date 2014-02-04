@@ -7,6 +7,11 @@ class Exception extends \Exception
 
 	public function __construct($message = '', $code = 0)
 	{
+		if(L_DEBUG == true){
+			error_reporting(-1);
+			return;
+		}
+		error_reporting(0);
 		$date_time = date('Y-m-d H:i:s');
 		$file = str_replace(L_WORKSPACE_PATH, '', $this->getFile());
 		$line = $this->getLine();

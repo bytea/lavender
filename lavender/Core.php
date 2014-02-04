@@ -40,7 +40,7 @@ final class Core
 		}
 
 		//auto define consts
-		define('L_EXT_PATH', L_WORKSPACE_PATH . 'Ext/');
+		define('L_EXT_PATH', L_WORKSPACE_PATH . 'ext/');
 		define('L_APP_NAME', basename(L_APP_PATH) );
 
 		//register autoload

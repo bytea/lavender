@@ -301,7 +301,7 @@ class WebPage
 				$key =  $prefix . $key;
 			}
 
-			$parameters[$key] = $result;
+			$parameters[$key] = htmlentities($result);
 		}
 
 		return $parameters;
